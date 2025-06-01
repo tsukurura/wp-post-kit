@@ -1,20 +1,15 @@
-# wp-post-kit
+# wp-post-kit v3
 
-MarkdownベースでWordPressに記事投稿する裏方ツール
+This kit includes:
+- Markdown + image auto-insertion
+- WordPress REST API post automation
 
-## バージョン
+## バージョン履歴
 
-- v1（note記事Vol.1で紹介）：Markdownテンプレのみ
-- v2（note記事Vol.2で紹介）：投稿スクリプト含む自動化対応
+### v3
+- H2見出しに対する画像自動挿入機能（`scripts/insert_images.py`）を追加
+- Canvaで出力した画像ファイルと連携しやすい命名ルールを導入
+- フォルダ構成整理（`scripts/`, `articles/`, `images/`）
 
-## 構成
-```
-wp-post-kit/
-├── articles/
-│   └── sample.md
-├── images/
-│   └── sample.jpg
-├── post.py
-├── config.yaml
-└── README.md
-```
+### v2
+- Markdown → WordPress投稿の基本機能を整備
